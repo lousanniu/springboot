@@ -1,0 +1,29 @@
+#定义用户默认的连接环境
+spring:
+  profiles:
+    active: prod
+---
+server:
+  port: 8092 #定义项目端口
+  servlet:
+    context-path: /jt
+user:
+  id: 100
+  username: 元宵节快乐
+  age: 19
+
+ #定义环境的名称
+spring:
+  profiles: prod
+---    #环境的分割线 
+server:
+  port: 8095 #定义项目端口
+  servlet:
+    context-path: /
+user:
+  id: 1000
+  username: 元宵节快乐
+  age: 192
+spring:
+  profiles: dev
+
