@@ -8,7 +8,7 @@ spring:
   datasource:
     #引入druid数据源
     type: com.alibaba.druid.pool.DruidDataSource
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/jtdb?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true
     username: root
     password: root
@@ -30,7 +30,7 @@ mybatis-plus:
     map-underscore-to-camel-case: true  #自动开启驼峰规则映射
 ---  #8005端口定义dev
 server:
-  port: 8005
+  port: 8006
   servlet:
     context-path: /
 spring:
@@ -38,7 +38,7 @@ spring:
   datasource:
     #引入druid数据源
     type: com.alibaba.druid.pool.DruidDataSource
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/jtdb?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true
     username: root
     password: root
